@@ -12,7 +12,6 @@ for x in range(0, len(input)):
         b = input[y]
 
         if a + b == 2020:
-
             print("A: ", a)
             print("B: ", b)
             print("Answer: ", a * b, "\n")
@@ -29,10 +28,7 @@ for x in range(0, len(input)):
         for z in range(y+1, len(input)):
             c = input[z]
 
-            d = a + b + c
-
             if a + b + c == 2020:
-
                 print("A: ", a)
                 print("B: ", b)
                 print("C: ", c)
