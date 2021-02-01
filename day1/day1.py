@@ -16,6 +16,7 @@ for x in range(0, len(input)):
             print("A: ", a)
             print("B: ", b)
             print("Answer: ", a * b, "\n")
+            break
 
 print("Part 2:")
 
@@ -36,3 +37,4 @@ for x in range(0, len(input)):
                 print("B: ", b)
                 print("C: ", c)
                 print("Answer: ", a * b * c)
+                break
