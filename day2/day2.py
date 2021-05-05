@@ -1,3 +1,5 @@
+import re
+
 input = []
 
 with open("input.txt") as file:
@@ -24,9 +26,7 @@ for x in range(0, lines):
 
     password = split_input[2]
 
-    for y in range(0, len(password)):
-        if password[y] == required_letter:
-            letter_appears += 1
+    letter_appears = len(re.findall(required_letter, password))
 
     if letter_appears >= min and letter_appears <= max:
         valid_passwords += 1
