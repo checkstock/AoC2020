@@ -6,11 +6,11 @@ lines = len(input)
 
 print("Part 1:")
 
-for x in range(0, lines):
-    a = input[x]
+for i in range(0, lines):
+    a = input[i]
 
-    for y in range(x+1, lines):
-        b = input[y]
+    for k in range(i+1, lines):
+        b = input[k]
 
         if a + b == 2020:
             print("A: ", a)
@@ -20,14 +20,14 @@ for x in range(0, lines):
 
 print("Part 2:")
 
-for x in range(0, lines):
-    a = input[x]
+for i in range(0, lines):
+    a = input[i]
 
-    for y in range(x+1, lines):
-        b = input[y]
+    for k in range(i+1, lines):
+        b = input[k]
 
-        for z in range(y+1, lines):
-            c = input[z]
+        for j in range(k+1, lines):
+            c = input[j]
 
             if a + b + c == 2020:
                 print("A: ", a)

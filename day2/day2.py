@@ -12,10 +12,10 @@ print("Day 2 Part 1: ")
 
 valid_passwords = 0
 
-for x in range(0, lines):
+for i in range(0, lines):
     letter_appears = 0
 
-    split_input = input[x].split()
+    split_input = input[i].split()
     numbers = split_input[0].split("-")
 
     min = int(numbers[0])
@@ -38,8 +38,8 @@ print("Day 2 Part 2: ")
 
 valid_passwords = 0
 
-for x in range(0, lines):
-    split_input = input[x].split()
+for i in range(0, lines):
+    split_input = input[i].split()
     numbers = split_input[0].split("-")
 
     index_one = int(numbers[0]) - 1
