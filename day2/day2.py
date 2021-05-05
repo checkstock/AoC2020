@@ -49,9 +49,6 @@ for x in range(0, lines):
 
     password = split_input[2]
 
-    exists_in_index_one = False
-    exists_in_index_two = False
-
     if password[index_one] == required_letter and not password[index_two] == required_letter:
         valid_passwords += 1
 
