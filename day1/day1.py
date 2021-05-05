@@ -9,7 +9,7 @@ print("Part 1:")
 for i in range(0, lines):
     a = input[i]
 
-    for k in range(i+1, lines):
+    for j in range(i+1, lines):
         b = input[k]
 
         if a + b == 2020:
@@ -23,10 +23,10 @@ print("Part 2:")
 for i in range(0, lines):
     a = input[i]
 
-    for k in range(i+1, lines):
+    for j in range(i+1, lines):
         b = input[k]
 
-        for j in range(k+1, lines):
+        for k in range(j+1, lines):
             c = input[j]
 
             if a + b + c == 2020:
