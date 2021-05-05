@@ -34,9 +34,6 @@ for x in range(0, len(slopes)):
     column_move = slopes[x][0]
 
     while row_index < rows:
-        #print(row_index)
-        #print(column_index)
-
         if input[row_index][column_index] == '#':
             trees += 1
 
