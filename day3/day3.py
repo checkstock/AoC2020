@@ -20,9 +20,7 @@ for i in range(0, rows):
 print("We encountered", trees, "trees.\n")
 
 print("Day 3 Part 2:")
-
 product = 1
-
 slopes = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]]
 
 for i in range(0, len(slopes)):
