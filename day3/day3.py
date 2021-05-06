@@ -5,16 +5,13 @@ def find_trees(input, slope):
     row_index = 0
     column_index = 0
 
-    row_move = slope[1]
-    column_move = slope[0]
-
     trees = 0
 
     while row_index < rows:
         if input[row_index][column_index] == '#':
             trees += 1
-        row_index += row_move
-        column_index = (column_index + column_move) % columns
+        row_index += slope[1]
+        column_index = (column_index + slope[0]) % columns
 
     return trees
 

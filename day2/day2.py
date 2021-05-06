@@ -24,9 +24,7 @@ for i in range(0, lines):
 
     required_letter = split_input[1].replace(':', "")
 
-    password = split_input[2]
-
-    letter_appears = len(re.findall(required_letter, password))
+    letter_appears = len(re.findall(required_letter, split_input[2]))
 
     if letter_appears >= min and letter_appears <= max:
         valid_passwords += 1
